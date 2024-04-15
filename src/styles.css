@@ -101,6 +101,8 @@ footer {
   margin-top: 20px;
   text-align: center;
   color: #000;
+  display: flex;
+  justify-content: space-around;
 }
 
 .weather-forecast-date {
