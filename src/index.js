@@ -49,6 +49,25 @@ function formatDate(date) {
     "Saturday",
   ];
 
+  function displayForecast() {
+    let forecast = document.querySelector("#forecast");
+
+    forecast.innerHTML = `
+      <div class="weather-forecast-day">
+         <div class="weather-forecast-date">Thur</div>
+         <img
+      src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+      alt=""
+      width="42"
+          />
+       <div class="weather-forecast-temperature">
+        <span class="weather-forecast-max">18°C</span>
+        <span class="weather-forecast-min">12°C</span>
+       </div>
+      </div>
+    `;
+  }
+
   let formattedDay = days[day];
   return `${formattedDay} ${hours}:${minutes}`;
 }
@@ -60,3 +79,5 @@ let currentDateELement = document.querySelector("#current-date");
 let currentDate = new Date();
 
 currentDateELement.innerHTML = formatDate(currentDate);
+
+displayForecast();
