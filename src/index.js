@@ -52,7 +52,10 @@ function formatDate(date) {
   function displayForecast() {
     let forecast = document.querySelector("#forecast");
 
-    forecast.innerHTML = `
+    let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+
+    days.forEach(function (day) {
+      forecast.innerHTML = `
       <div class="weather-forecast-day">
          <div class="weather-forecast-date">Thur</div>
          <img
@@ -66,6 +69,7 @@ function formatDate(date) {
        </div>
       </div>
     `;
+    });
   }
 
   let formattedDay = days[day];
@@ -80,4 +84,4 @@ let currentDate = new Date();
 
 currentDateELement.innerHTML = formatDate(currentDate);
 
-displayForecast();
+console.log(displayForecast);
