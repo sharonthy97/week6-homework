@@ -32,6 +32,11 @@ header {
   width: 80%;
   font-size: 16px;
   padding: 15px 20px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.search-input:hover {
+  box-shadow: 0px 1px 5px #d9d9d9;
 }
 
 .search-button {
@@ -87,6 +92,10 @@ main {
 .current-temperature-unit {
   margin-top: 6px;
   font-size: 28px;
+}
+
+.feels-like {
+  display: inline-block;
 }
 
 .weather-forecast {
